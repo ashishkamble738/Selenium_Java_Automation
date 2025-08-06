@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN" monitorInterval="30">
+ 
+    <!-- Logging Properties -->
+    <Properties>        
+        <Property name="basePath">logs</Property>
+    </Properties>
+     
+    <Appenders>
+     
+        <!-- Console Appender -->
+        <Console name="Console" target="SYSTEM_OUT" follow="true">
+            <PatternLayout pattern="${LOG_PATTERN}"/>
+        </Console>
+         
+        <!-- File Appenders on need basis -->
+        <RollingFile name="frameworkLog" fileName="${APP_LOG_ROOT}/app-framework.log"
+            filePattern="${APP_LOG_ROOT}/app-framework-%d{yyyy-MM-dd}-%i.log">
+            <LevelRangeFilter minLevel="ERROR" maxLevel="ERROR" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout pattern="${LOG_PATTERN}"/>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="10MB" />
+            </Policies>
+            <DefaultRolloverStrategy max="10"/>
+        </RollingFile>         
+        
+    </Appenders>
+ 
+    <Loggers>
+     
+        <Logger name="demo" additivity="false" level="trace">
+            <AppenderRef ref="traceLog" />
+            <AppenderRef ref="Console" />
+        </Logger>
+         
+        <Logger name="demo" additivity="false" level="debug">
+            <AppenderRef ref="debugLog" />
+            <AppenderRef ref="infoLog"  />
+            <AppenderRef ref="errorLog" />
+            <AppenderRef ref="Console"  />
+        </Logger>
+         
+        <Logger name="demo" additivity="false" level="info">
+            <AppenderRef ref="perfLog" />
+            <AppenderRef ref="Console"/>
+        </Logger>
+                 
+        <Root level="warn">
+            <AppenderRef ref="Console"/>
+        </Root>
+ 
+    </Loggers>
+ 
+</Configuration>

@@ -1,0 +1,17 @@
+[DEBUG] 2025-07-23 21:08:33.531 [main] PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+[DEBUG] 2025-07-23 21:08:33.541 [main] PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+[TRACE] 2025-07-23 21:15:53.928 [main] Log4jDemo - This is Trace message
+[INFO ] 2025-07-23 21:15:53.930 [main] Log4jDemo - This is information message
+[ERROR] 2025-07-23 21:15:53.930 [main] Log4jDemo - This is error message
+[WARN ] 2025-07-23 21:15:53.930 [main] Log4jDemo - This is warning message
+[FATAL] 2025-07-23 21:15:53.930 [main] Log4jDemo - This is fatal message
+[TRACE] 2025-07-23 21:18:09.131 [main] Log4jDemo - This is Trace message
+[INFO ] 2025-07-23 21:18:09.132 [main] Log4jDemo - This is information message
+[ERROR] 2025-07-23 21:18:09.132 [main] Log4jDemo - This is error message
+[WARN ] 2025-07-23 21:18:09.133 [main] Log4jDemo - This is warning message
+[FATAL] 2025-07-23 21:18:09.133 [main] Log4jDemo - This is fatal message
+[TRACE] 2025-07-23 21:18:40.113 [main] Log4jDemo - This is Trace message
+[INFO ] 2025-07-23 21:18:40.115 [main] Log4jDemo - This is information message
+[ERROR] 2025-07-23 21:18:40.115 [main] Log4jDemo - This is error message
+[WARN ] 2025-07-23 21:18:40.115 [main] Log4jDemo - This is warning message
+[FATAL] 2025-07-23 21:18:40.115 [main] Log4jDemo - This is fatal message
